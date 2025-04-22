@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Generative AI in Education</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://media-hosting.imagekit.io/a1c4683b410e4e7c/robot%20photo%202.PNG?Expires=1839342651&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=N-QJUeYzYr67j1dYqkhhK6bx3moAM5cFotoYbcWsqK-S7FDabt2jg0P0gVW09M-CjUXQtOayGqtBm3W7Y2vxib1X2P49K4yTa203BzVS16k0iIb1oVALkR3t77MtHReRBSO8G~Hz~uQCofXHKibDpOSXw5mg932V9fxbRUW~oUKhnUp~7pEFAZQGX0EaGe7eGKJy7W8w56QSQf-3hALjDQHYQ4rVzRXDxUrdFtGZF8uslKXTvMA147LDMEFuaNIPIvZFBABgeXo9wI2IxLY15YyR0hk8DhnWJ-n1xpx1gfKmsvOXCIlHnMqmOyTbExaVmO3U5FayeFy7VjmhIGs72g__') no-repeat center center fixed;
+      background-size: cover;
+      color: #f0f0f0;
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background-color: rgba(0, 0, 0, 0.9);
+      padding: 15px 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    nav button {
+      background: #111;
+      color: #00ff88;
+      border: 1px solid #00ff88;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    nav button:hover {
+      background: #00ff88;
+      color: #000;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 60px 20px;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding-top: 120px;
+    }
+
+    .logo-text {
+      font-size: 32px;
+      color: #00ff88;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 64px;
+      line-height: 1.2;
+      margin: 0;
+    }
+
+    .highlight {
+      color: #828fff;
+    }
+
+    .tagline {
+      margin-top: 30px;
+      font-size: 22px;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 12px 20px;
+      border: 1px solid #00ff88;
+      border-radius: 4px;
+    }
+
+    .ai-text {
+      color: #ffffff;
+    }
+
+    .by {
+      color: #00ff88;
+      font-weight: bold;
+      background-color: #111;
+      padding: 2px 6px;
+      border-radius: 3px;
+      margin-left: 3px;
+    }
+
+    .cta-button {
+      margin-top: 25px;
+      padding: 14px 32px;
+      font-size: 18px;
+      background-color: #00ff88;
+      color: #000;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .cta-button:hover {
+      background-color: #00cc70;
+    }
+
+    section {
+      padding: 80px 20px;
+      background-color: rgba(0, 0, 0, 0.85);
+      border-top: 1px solid #222;
+      color: #f0f0f0;
+    }
+
+    section h2 {
+      font-size: 36px;
+      color: #00ff88;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    section p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 18px;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 48px;
+      }
+
+      .tagline {
+        font-size: 18px;
+      }
+
+      nav {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px;
+      }
+
+      nav button {
+        padding: 8px 16px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <button onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">About</button>
+    <button onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})">Features</button>
+    <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Contact</button>
+  </nav>
+
+  <div class="hero">
+    <div class="logo-text">Rimberio</div>
+    <h1><span class="bold">Generative AI</span><br><span class="highlight">in Education</span></h1>
+    <p class="tagline">
+      Bettering <span class="highlight">education</span> 1 prompt <span class="ai-text">at <span class="by">BY</span></span> time
+    </p>
+    <button class="cta-button">Get Started</button>
+  </div>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>We're revolutionizing how educators and students interact with knowledge using the power of Generative AI. Whether it's personalized learning, lesson planning, or smart tutoring — we’re here to transform education.</p>
+  </section>
+
+  <section id="features">
+    <h2>Features</h2>
+    <p>✨ AI-Powered Prompting<br>✨ Real-Time Insights<br>✨ Personalized Learning Paths<br>✨ Seamless Classroom Integration</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Have questions? Reach out to us at <a href="mailto:hello@example.com" style="color:#828fff; text-decoration: none;">hello@example.com</a> or follow us on social media.</p>
+  </section>
+
+</body>
+</html>
